@@ -73,20 +73,7 @@ const continua =()=> {
 let avanzar = confirm ("¿Desea hacer otra consulta?")
 
 if(avanzar===true){
- let sueldoBrutoIngresado = sueldo();
-console.log(sueldoBrutoIngresado);
-let situacionConvencional = condicionConvenio();
-console.log(situacionConvencional);
-let importeDescuento = descuento(situacionConvencional);
-console.log(importeDescuento);
-let haberesSinAportes = sueldoNeto(situacionConvencional, importeDescuento, sueldoBrutoIngresado);
-console.log(haberesSinAportes);
-let impGanancias = ganancias(haberesSinAportes);
-console.log(impGanancias);
-let sueldoFinal = cierre(impGanancias);
-console.log(sueldoFinal);
-let avanzar = continua()
-console.log(avanzar);
+ alert("Si desea realizar otra consulta presione F5 y reinicie el simulador")
 }else{
     alert("Muchas gracias por utilizar nuestro servicio");
 };
